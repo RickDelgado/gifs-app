@@ -15,6 +15,7 @@ export class SidebarComponent implements OnInit {
    }
 
   ngOnInit(): void {
+
   }
 
   onClick(event:Event){
@@ -23,7 +24,7 @@ export class SidebarComponent implements OnInit {
     const tag = button.textContent ? 
     button.textContent :'';
     
-    this.serviceGifs.reOrderTags(tag);
+    this.serviceGifs.searchTag(tag);
   }
 
 }
